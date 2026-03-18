@@ -3,14 +3,13 @@ package model;
 import java.util.ArrayList;
 
 public class Node {
-    private int id;
-    private Day date;
-    private ArrayList<Comments> comments;
+    private final Day date;
     public Node next;
 
-    public Node(int id, Day date){
-        this.id = id;
+    public Node(Day date){
         this.date = date;
         this.next = null;
     }
+
+
 }
