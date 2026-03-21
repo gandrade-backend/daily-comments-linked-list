@@ -10,7 +10,6 @@ Each day is represented as a node in a linked list, and each node stores comment
 - Node-based data structures
 - Memory allocation concepts adapted from C to Java
 - Traversal, insertion, and removal operations
-- Comparison with dynamic arrays (ArrayList)
 
 # ⚙️ Features
 - Add a new day
@@ -33,6 +32,7 @@ This project uses a linked list to:
 - Implement version using ArrayList for comparison
 - Add user interface (CLI or GUI)
 - Improve search performance
+- Comparison with dynamic arrays (ArrayList)
 
 # 📚 What I Learned
 - How linked lists work internally
