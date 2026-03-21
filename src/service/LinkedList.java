@@ -3,8 +3,6 @@ package service;
 import model.Day;
 import model.Node;
 
-//testing
-
 public class LinkedList {
     Node start;
 
