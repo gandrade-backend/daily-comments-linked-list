@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Day {
     private final int id;
-    private LocalDate date;
+    private final LocalDate date;
     private final Humor humor;
     private List<String> comments;
     private final int noteOfTheDay;
@@ -22,6 +22,10 @@ public class Day {
     public int getId(){
         return id;
     }
+
+    public Humor getHumor() { return humor; }
+
+    public LocalDate getDate() { return date; }
 
     public int getNoteOfTheDay(){
         return noteOfTheDay;

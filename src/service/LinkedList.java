@@ -1,31 +1,74 @@
 package service;
 
 import model.Day;
+import model.Humor;
 import model.Node;
 
 public class LinkedList {
     Node start;
 
-    public boolean IsEmpty(){
+    public LinkedList(){
+        this.start = null;
+    }
+
+    public boolean isEmpty(){
         return start == null;
     }
 
-    public void Insert(){
-        //Node newNode = new Node();
-        //Day day = new Day(date);
-        //Node<Day> newNode = new Node<>(day);
-
+    public boolean checkEmpty() {
+        if(isEmpty()){
+            System.out.println("The List is empty");
+            return true;
+        }
+        return false;
     }
 
-    public void print(){
-        if(!IsEmpty()) {
-            for(Node n = start; n != null; n = n.next){
-                System.out.println("Id - " + n.getId() + "| Day - ");
-                for(String c : n.commets){
-                    System.out.println("commets - " + n.commets);
-                }
+    public void insert(Day day){
+        Node newNode = new Node(day);
+
+        if(isEmpty()){ start = newNode; }
+        else{
+            Node current = start;
+
+            while(current.next != null){
+                current = current.next;
             }
-        }else
-            System.out.println("The Node is empty");
+            current.next = newNode;
+        }
+    }
+
+    //Name Incomplete
+    public void print(){
+        if(checkEmpty()) { return; }
+        else {
+            Node current = start;
+            while(current.next != null){
+                System.out.println("print");
+            }
+        }
+    }
+
+    //Incomplete
+    public void removeById(int id){
+        if(checkEmpty()) { return; }
+        else{
+
+        }
+    }
+
+    public void searchForHumor(Humor humor){
+        if(checkEmpty()) { return; }
+    }
+
+    //Incomplete
+    public void averageOfTheDay(){
+        if(checkEmpty()) { return; }
+        else{
+            Node current = start;
+            double noteTotal = 0;
+            while(current.next != null){
+                noteTotal += current.getDay().getNoteOfTheDay();
+            }
+        }
     }
 }
