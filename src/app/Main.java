@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Main{
     public static void main(String[] args){
         int choice = 0;
-        LinkedList List;
+        LinkedList List = new LinkedList();
         Scanner scanner = new Scanner(System.in);
 
         do{
@@ -23,7 +23,7 @@ public class Main{
                     AddRegistration();
                     break;
                 case 2:
-                    RemoveRegistration();
+                    RemoveRegistration(List);
                     break;
                 case 3:
                     SearchForHumor();
@@ -40,18 +40,28 @@ public class Main{
         }while(choice != 6);
     }
 
+    //Incomplete
     public static void AddRegistration(){
 
     }
-    public static void RemoveRegistration(){
 
+    //Incomplete
+    public static void RemoveRegistration(LinkedList List){
+        List.printAllRegisters();
+        System.out.print("Enter the ID of the registration to be removed: ");
     }
+
+    //Incomplete
     public static void SearchForHumor(){
 
     }
+
+    //Incomplete
     public static void ShowAverageDailyGrade(){
 
     }
+
+    //Incomplete
     public static void ShowHumorMoreOften(){
 
     }
