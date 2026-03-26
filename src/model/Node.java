@@ -1,4 +1,4 @@
-package model.doubly;
+package model;
 
 public class Node<T> {
     private final T data;

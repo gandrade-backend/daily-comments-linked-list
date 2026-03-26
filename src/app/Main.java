@@ -1,13 +1,13 @@
 package app;
 
-import service.LinkedList;
+import service.DoublyLinkedList;
 
 import java.util.Scanner;
 
 public class Main{
     public static void main(String[] args){
         int choice = 0;
-        LinkedList List = new LinkedList();
+        DoublyLinkedList List = new DoublyLinkedList();
         Scanner scanner = new Scanner(System.in);
 
         do{
@@ -46,7 +46,7 @@ public class Main{
     }
 
     //Incomplete
-    public static void RemoveRegistration(LinkedList List){
+    public static void RemoveRegistration(DoublyLinkedList List){
         List.printAllRegisters();
         System.out.print("Enter the ID of the registration to be removed: ");
     }
