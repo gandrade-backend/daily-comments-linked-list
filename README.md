@@ -1,12 +1,12 @@
-# 📅 Daily Comments (Java - Linked List)
-A Java project that implements a daily comment system using a custom Linked List structure (without using Java's built-in collections).
+# 📅 Daily Comments (Java - Doubly Linked List)
+A Java project that implements a daily comment system using a custom Doubly Linked List structure (without using Java's built-in collections).
 
 # 🚀 About the Project
 This project was originally developed in C for a Data Structures course and later rewritten in Java to demonstrate understanding of data structures across different programming languages.
-Each day is represented as a node in a linked list, and each node stores comments associated with that specific day.
+Each day is represented as a node in a doubly linked list, and each node stores comments associated with that specific day.
 
 # 🧠 Concepts Demonstrated
-- Linked List implementation from scratch
+- Doubly Linked List implementation from scratch
 - Node-based data structures
 - Memory allocation concepts adapted from C to Java
 - Traversal, insertion, and removal operations
@@ -22,7 +22,7 @@ Each day is represented as a node in a linked list, and each node stores comment
 - Java
 - Object-Oriented Programming (OOP)
 
-# 📊 Why Linked List?
+# 📊 Why Doubly Linked List?
 This project uses a linked list to:
 - Allow dynamic memory usage
 - Optimize insertion and removal operations
@@ -32,7 +32,6 @@ This project uses a linked list to:
 - Implement version using ArrayList for comparison
 - Add user interface (CLI or GUI)
 - Improve search performance
-- Comparison with dynamic arrays (ArrayList)
 
 # 📚 What I Learned
 - How linked lists work internally
