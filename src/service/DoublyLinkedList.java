@@ -44,7 +44,9 @@ public class DoublyLinkedList {
         System.out.println("Id : " + node.getData().getId());
         System.out.println("Date: " + node.getData().getDate());
         System.out.println("Humor: " + node.getData().getHumor());
-        System.out.println("Comments: " + node.getData().getComments());
+        for(String c : node.getData().getComments()){
+            System.out.println("Comments: " + c);
+        }
         System.out.println("Note of The Day: " + node.getData().getNoteOfTheDay());
     }
 
@@ -59,18 +61,30 @@ public class DoublyLinkedList {
         }
     }
 
-    //Incomplete
+    //Incomplete / id found or no
     public void removeById(int id){
         if(!checkEmpty()) {
-            Node<Day> current, previous;
+            Node<Day> current;
             for(current = start; current != null; current = current.next){
                 if(current.getData().getId() == id){
                     break;
                 }
-                previous = current;
             }
             if(current != null){
-
+                if(current == start){
+                    start = current.next;
+                    if(start != null){
+                        current.previous = null;
+                    }
+                }
+                else{
+                    if(current.previous != null){
+                        current.previous.next = current.next;
+                    }
+                    if(current.next != null){
+                        current.next.previous = current.previous;
+                    }
+                }
             }
         }
     }
@@ -105,7 +119,13 @@ public class DoublyLinkedList {
             current = current.next;
             count++;
         }
-        return count == 0 ? 0 : noteTotal/count;
+        return noteTotal/count;
+    }
+
+    public void humorMoreOften(Humor humor){
+        if(!checkEmpty()){
+
+        }
     }
 
     //Complete
