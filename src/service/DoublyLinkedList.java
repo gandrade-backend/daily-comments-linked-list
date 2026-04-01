@@ -6,6 +6,11 @@ import model.Node;
 
 public class DoublyLinkedList {
     Node<Day> start;
+    private int countId = 0;
+
+    public int getCountId(){
+        return countId;
+    }
 
     public DoublyLinkedList(){
         this.start = null;
@@ -17,7 +22,7 @@ public class DoublyLinkedList {
 
     public boolean checkEmpty() {
         if(isEmpty()){
-            System.out.println("The List is empty");
+            System.out.println("The List is empty\n");
             return true;
         }
         return false;
@@ -37,6 +42,7 @@ public class DoublyLinkedList {
             current.next = newNode;
             newNode.previous = current;
         }
+        countId++;
     }
 
     //Incomplete
@@ -122,13 +128,19 @@ public class DoublyLinkedList {
         return noteTotal/count;
     }
 
+    //Incomplete
     public void humorMoreOften(Humor humor){
         if(!checkEmpty()){
-
+            int[] humorMoreOf = new int[Humor.values().length];
+            Node<Day> current = start;
+            while(current != null){
+                //current.getData().getHumor();
+                current = current.next;
+            }
         }
     }
 
-    //Complete
+    //Clean All Registry;
     public void cleanRegistry(){
         if(!checkEmpty()) {
             start = null;
