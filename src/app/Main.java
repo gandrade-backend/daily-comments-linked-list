@@ -86,7 +86,7 @@ public class Main{
         String comment = scanner.nextLine();
         System.out.print("\nInsert the Note: ");
         int note = scanner.nextInt();
-
+        //
         Day newDay = new Day(list.getCountId(), data, humor, note);
         list.addRegistration(newDay);
     }
